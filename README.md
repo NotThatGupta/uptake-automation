@@ -14,4 +14,5 @@ Maven Profiles
 The 3 profile groups are environment, browser, and grid.
 
 For example, to run all tests locally in the prod environment using chrome,
+
     mvn clean test -Pprod,chrome,nogrid
