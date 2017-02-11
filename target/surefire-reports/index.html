@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Tests">
+              <span class="suite-name border-passed">Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Tests">
+                    <span>C:\Users\vibha\IdeaProjects\uptake-automation\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Tests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Tests" class="hide-methods passed suite-Tests"> (hide)</a> <!-- hide-methods passed suite-Tests -->
+                      <a href="#" panel-name="suite-Tests" class="show-methods passed suite-Tests"> (show)</a> <!-- show-methods passed suite-Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testDesktopMenuBarNavigation(3, Newsroom, /newsroom)">testDesktopMenuBarNavigation(3, Newsroom, /newsroom)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)">testDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testDesktopMenuBarNavigation(0, Approach, /approach)">testDesktopMenuBarNavigation(0, Approach, /approach)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testDesktopMenuBarNavigation(1, Products, /products)">testDesktopMenuBarNavigation(1, Products, /products)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testDesktopMenuBarNavigation(2, Industries, /industries)">testDesktopMenuBarNavigation(2, Industries, /industries)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)">testDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testMobileDesktopMenuBarNavigation(3, Newsroom, /newsroom)">testMobileDesktopMenuBarNavigation(3, Newsroom, /newsroom)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testMobileDesktopMenuBarNavigation(0, Approach, /approach)">testMobileDesktopMenuBarNavigation(0, Approach, /approach)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testMobileDesktopMenuBarNavigation(2, Industries, /industries)">testMobileDesktopMenuBarNavigation(2, Industries, /industries)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testMobileDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)">testMobileDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testMobileDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)">testMobileDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="com.uptake.navigation.NavigationTests" hash-for-method="testMobileDesktopMenuBarNavigation(1, Products, /products)">testMobileDesktopMenuBarNavigation(1, Products, /products)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tests" class="panel Tests">
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.uptake.navigation.NavigationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDesktopMenuBarNavigation(3, Newsroom, /newsroom)">
+                  </a> <!-- testDesktopMenuBarNavigation(3, Newsroom, /newsroom) -->
+                  <span class="method-name">testDesktopMenuBarNavigation</span>
+                  <span class="parameters">(3, Newsroom, /newsroom)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)">
+                  </a> <!-- testDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/) -->
+                  <span class="method-name">testDesktopMenuBarNavigation</span>
+                  <span class="parameters">(5, Uptake Blog, https://blog.uptake.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDesktopMenuBarNavigation(0, Approach, /approach)">
+                  </a> <!-- testDesktopMenuBarNavigation(0, Approach, /approach) -->
+                  <span class="method-name">testDesktopMenuBarNavigation</span>
+                  <span class="parameters">(0, Approach, /approach)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDesktopMenuBarNavigation(1, Products, /products)">
+                  </a> <!-- testDesktopMenuBarNavigation(1, Products, /products) -->
+                  <span class="method-name">testDesktopMenuBarNavigation</span>
+                  <span class="parameters">(1, Products, /products)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDesktopMenuBarNavigation(2, Industries, /industries)">
+                  </a> <!-- testDesktopMenuBarNavigation(2, Industries, /industries) -->
+                  <span class="method-name">testDesktopMenuBarNavigation</span>
+                  <span class="parameters">(2, Industries, /industries)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)">
+                  </a> <!-- testDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake) -->
+                  <span class="method-name">testDesktopMenuBarNavigation</span>
+                  <span class="parameters">(4, Beyond.Uptake, /beyond-uptake)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMobileDesktopMenuBarNavigation(3, Newsroom, /newsroom)">
+                  </a> <!-- testMobileDesktopMenuBarNavigation(3, Newsroom, /newsroom) -->
+                  <span class="method-name">testMobileDesktopMenuBarNavigation</span>
+                  <span class="parameters">(3, Newsroom, /newsroom)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMobileDesktopMenuBarNavigation(0, Approach, /approach)">
+                  </a> <!-- testMobileDesktopMenuBarNavigation(0, Approach, /approach) -->
+                  <span class="method-name">testMobileDesktopMenuBarNavigation</span>
+                  <span class="parameters">(0, Approach, /approach)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMobileDesktopMenuBarNavigation(2, Industries, /industries)">
+                  </a> <!-- testMobileDesktopMenuBarNavigation(2, Industries, /industries) -->
+                  <span class="method-name">testMobileDesktopMenuBarNavigation</span>
+                  <span class="parameters">(2, Industries, /industries)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMobileDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)">
+                  </a> <!-- testMobileDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake) -->
+                  <span class="method-name">testMobileDesktopMenuBarNavigation</span>
+                  <span class="parameters">(4, Beyond.Uptake, /beyond-uptake)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMobileDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)">
+                  </a> <!-- testMobileDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/) -->
+                  <span class="method-name">testMobileDesktopMenuBarNavigation</span>
+                  <span class="parameters">(5, Uptake Blog, https://blog.uptake.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMobileDesktopMenuBarNavigation(1, Products, /products)">
+                  </a> <!-- testMobileDesktopMenuBarNavigation(1, Products, /products) -->
+                  <span class="method-name">testMobileDesktopMenuBarNavigation</span>
+                  <span class="parameters">(1, Products, /products)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+        </div> <!-- panel Tests -->
+        <div panel-name="test-xml-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\vibha\IdeaProjects\uptake-automation\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Tests&quot;&gt;
+  &lt;test name=&quot;Test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.uptake.navigation.NavigationTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+&lt;/suite&gt; &lt;!-- Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tests');
+function tableData_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testDesktopMenuBarNavigation')
+data.setCell(0, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(0, 3, 5898);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMobileDesktopMenuBarNavigation')
+data.setCell(1, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(1, 3, 5180);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDesktopMenuBarNavigation')
+data.setCell(2, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(2, 3, 4601);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDesktopMenuBarNavigation')
+data.setCell(3, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(3, 3, 4556);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDesktopMenuBarNavigation')
+data.setCell(4, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(4, 3, 4393);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDesktopMenuBarNavigation')
+data.setCell(5, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(5, 3, 4362);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testDesktopMenuBarNavigation')
+data.setCell(6, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(6, 3, 4261);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testMobileDesktopMenuBarNavigation')
+data.setCell(7, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(7, 3, 3940);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testMobileDesktopMenuBarNavigation')
+data.setCell(8, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(8, 3, 3751);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testMobileDesktopMenuBarNavigation')
+data.setCell(9, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(9, 3, 3684);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testMobileDesktopMenuBarNavigation')
+data.setCell(10, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(10, 3, 3640);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testMobileDesktopMenuBarNavigation')
+data.setCell(11, 2, 'com.uptake.navigation.NavigationTests')
+data.setCell(11, 3, 3598);
+window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-Tests">
+              </div> <!-- times-div-Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.uptake.navigation.NavigationTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initTestSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">8922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDesktopMenuBarNavigation(0, Approach, /approach)</span>
+                <span class="method-start">8963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">13565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">15149 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDesktopMenuBarNavigation(1, Products, /products)</span>
+                <span class="method-start">15150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">19513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">20943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDesktopMenuBarNavigation(2, Industries, /industries)</span>
+                <span class="method-start">20944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">25338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">26692 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDesktopMenuBarNavigation(3, Newsroom, /newsroom)</span>
+                <span class="method-start">26693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">31250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">32790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)</span>
+                <span class="method-start">32791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">37053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">38702 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)</span>
+                <span class="method-start">38703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">44603 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">45983 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMobileDesktopMenuBarNavigation(0, Approach, /approach)</span>
+                <span class="method-start">45984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">49925 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">51580 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMobileDesktopMenuBarNavigation(1, Products, /products)</span>
+                <span class="method-start">51582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">55223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">56974 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMobileDesktopMenuBarNavigation(2, Industries, /industries)</span>
+                <span class="method-start">56975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">60573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">62358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMobileDesktopMenuBarNavigation(3, Newsroom, /newsroom)</span>
+                <span class="method-start">62359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">66110 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">68208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMobileDesktopMenuBarNavigation(4, Beyond.Uptake, /beyond-uptake)</span>
+                <span class="method-start">68209 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initWebDriver</span>
+                <span class="method-start">71894 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">73872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMobileDesktopMenuBarNavigation(5, Uptake Blog, https://blog.uptake.com/)</span>
+                <span class="method-start">73873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79194 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,6 @@
+com\uptake\util\PropertyLoader.class
+com\uptake\base\BaseTest.class
+com\uptake\navigation\NavigationTests.class
+com\uptake\page\BasePage.class
+com\uptake\base\BaseTest$1.class
+com\uptake\page\HomePage.class
